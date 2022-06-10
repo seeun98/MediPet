@@ -33,19 +33,19 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">동물관련 물품 리뷰 </h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Spring Boot로 시작하는 첫 사이드 웹 프로젝트 !!!
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <!--<a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>-->
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <!--<a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>-->
   </p>
 </div>
 
@@ -53,7 +53,7 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary>목차</summary>
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
@@ -61,13 +61,13 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li>
+    <!--<li>
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
-    </li>
+    </li>-->
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
@@ -83,18 +83,19 @@
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
+<ol>
+  <ul>반려동물의 물품들을 솔직하게 리뷰해주는 공간을 만들고 싶어요 :) </ul>
+  <ul>반려동물을 키우면서 생기는 고충과 꿀팁들을 커뮤니티 안에서 공유하고 싶어요. </ul>
+  <ul>카테고리 별로 나눠 물품 하나하나의 별점과 리뷰를 남기도록 할게요.</ul>
+</ol>
+<!--
+<div align="center">반려동물의 물품들을 솔직하게 리뷰해주는 공간을 만들고 싶어요 :) 
+</br>
+또한 반려동물을 키우면서 생기는 고충과 꿀팁들을 커뮤니티 안에서 공유하고 싶어요.
+</br>
+카테고리 별로 나눠 물품 하나하나의 별점과 리뷰를 남기도록 할게요.
+</div>
+-->
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -103,6 +104,10 @@ Use the `BLANK_README.md` to get started.
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
+* [SpringBoot](https://start.spring.io/)
+* [MySQL](https://www.mysql.com/)
+
+<!--
 * [Next.js](https://nextjs.org/)
 * [React.js](https://reactjs.org/)
 * [Vue.js](https://vuejs.org/)
@@ -110,13 +115,13 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * [Svelte](https://svelte.dev/)
 * [Laravel](https://laravel.com)
 * [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [JQuery](https://jquery.com)-->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
-<!-- GETTING STARTED -->
+<!-- GETTING STARTED 
 ## Getting Started
 
 This is an example of how you may give instructions on setting up your project locally.
@@ -150,7 +155,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
+-->
 
 <!-- USAGE EXAMPLES -->
 ## Usage
