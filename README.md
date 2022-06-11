@@ -105,6 +105,13 @@
 * [SpringBoot](https://start.spring.io/)
 * [MySQL](https://www.mysql.com/)
 
+### 필요한 기능
+<div>
+  1. 로그인/ 회원가입</br>
+  2. 반려동물 카테고리 별로 물품 보여주기 </br>
+  3. 그 안에 별점과 리뷰 남기는 칸 </br>
+  4. 커뮤니티 게시판 </br>
+  
 <!--
 * [Next.js](https://nextjs.org/)
 * [React.js](https://reactjs.org/)
