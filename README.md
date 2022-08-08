@@ -33,9 +33,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">내 손안의 동물병원 </h3>
+  <h3 align="center">Medi Pet </h3>
 
   <p align="center">
+    내 손 안에 동물병원 </br>
     Spring Boot로 시작하는 첫 사이드 웹 프로젝트 !!!
     <br />
     <!--<a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>-->
