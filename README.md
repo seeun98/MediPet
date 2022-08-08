@@ -33,7 +33,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">동물관련 물품 리뷰 </h3>
+  <h3 align="center">내 손안의 동물병원 </h3>
 
   <p align="center">
     Spring Boot로 시작하는 첫 사이드 웹 프로젝트 !!!
@@ -84,9 +84,9 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 <ol>
-  <ul>반려동물의 물품들을 솔직하게 리뷰해주는 공간을 만들고 싶어요 :) </ul>
-  <ul>반려동물을 키우면서 생기는 고충과 꿀팁들을 커뮤니티 안에서 공유하고 싶어요. </ul>
-  <ul>카테고리 별로 나눠 물품 하나하나의 별점과 리뷰를 남기도록 할게요.</ul>
+  <ul>반려동물에게 필요한 약을 추천받습니다. </ul>
+  <ul>주변의 동물병원을 빠르게 찾아줍니다.</ul>
+  <ul>카테고리 별로 나눠 약품의 리뷰를 볼 수 있습니다.</ul>
 </ol>
 <!--
 <div align="center">반려동물의 물품들을 솔직하게 리뷰해주는 공간을 만들고 싶어요 :) 
@@ -108,9 +108,10 @@
 ### 필요한 기능
 <div>
   1. 로그인/ 회원가입</br>
-  2. 반려동물 카테고리 별로 물품 보여주기 </br>
-  3. 그 안에 별점과 리뷰 남기는 칸 </br>
-  4. 커뮤니티 게시판 </br>
+  2. 메인화면 </br>
+  3. 약 종류 </br>
+  4. 동물병원 </br>
+  5. 커뮤니티 </br>
   
 <!--
 * [Next.js](https://nextjs.org/)
@@ -124,6 +125,8 @@
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+### 참고
+https://docs.google.com/spreadsheets/d/12ayet2fWVu8hm9Q1udcKQEpU2tSSCfZb8BsSejHf2v0/edit#gid=0
 
 
 <!-- GETTING STARTED 
