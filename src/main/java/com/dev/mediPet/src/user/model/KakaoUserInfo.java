@@ -7,9 +7,8 @@ import lombok.Getter;
 @AllArgsConstructor
 @Getter
 public class KakaoUserInfo {
-    //kakao developer -> 제품설정 -> 카카오 로그인 -> 동의항목
+    //사용자 정보 가져올 객체들
     //닉네임, 이메일, 성별
     private String nickName;
-    private String email;
-    private String gender;
+    //private String email;
 }
