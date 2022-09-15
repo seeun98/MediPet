@@ -26,6 +26,7 @@ kakao developers / 사용자 정보 가져오기 (https://developers.kakao.com/d
 * */
 public class KakaoApiService {
     public static KakaoUserInfo getKakaoUserInfo(String accessToken) throws BaseException {
+
         String api = "https://kapi.kakao.com/v2/user/me"; //기본정보
         String authorization_header = "Bearer " + accessToken;
         KakaoUserInfo kakaoUserInfo; // 정보 받아서 넘겨줄 변수
@@ -56,20 +57,22 @@ public class KakaoApiService {
             JSONObject jsonObjectMain;
             jsonObjectMain = (JSONObject) parser.parse(sb.toString());
             //parse 확인
-
+            System.out.println(sb.toString());
 
             System.out.println("here");
             JSONObject kakao_account = (JSONObject) jsonObjectMain.get("kakao_account");
             JSONObject profile = (JSONObject) kakao_account.get("profile");
             String nickname = (String) profile.get("nickname");
+            String emailAddress = (String) kakao_account.get("email");
             //boolean has_email = (boolean) kakao_account.get("email");
             //String email = (String) kakao_account.get("email");
 
+            System.out.println("emailAddress : " + emailAddress);
             System.out.println("nickname : " + nickname);
             br.close();
             in.close();
             http.disconnect();
-            kakaoUserInfo = new KakaoUserInfo(nickname);
+            kakaoUserInfo = new KakaoUserInfo(nickname, emailAddress);
 
         } catch (Exception exception) {
             throw new BaseException(FAILED_TO_KAKAO_AUTH);
