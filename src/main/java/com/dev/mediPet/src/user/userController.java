@@ -4,17 +4,23 @@ import java.lang.String;
 import java.util.List;
 
 import com.dev.mediPet.config.BaseException;
+import com.dev.mediPet.config.BaseResponse;
+import com.dev.mediPet.src.user.model.KakaoAbleUser;
 import com.dev.mediPet.src.user.model.KakaoUserInfo;
 import com.dev.mediPet.src.user.model.PostKakaoLoginReq;
 import com.dev.mediPet.src.user.utils.KakaoApiService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import static com.dev.mediPet.config.BaseResponseStatus.AUTH_KAKAO_EMPTY_TOKEN;
+
 @RestController
 @RequestMapping("/user")
 public class userController {
     @Autowired
     private userDao userDao;
+    @Autowired
+    private userService userService;
     /**
      * 3. 카카오 로그인 API
      * [POST] /users/login/kakao
@@ -22,10 +28,10 @@ public class userController {
      */
     @ResponseBody
     @PostMapping("/login/kakao")
-    public String kakaoLogin(@RequestBody PostKakaoLoginReq postKakaoLogin) {
+    public BaseResponse<KakaoAbleUser> kakaoLogin(@RequestBody PostKakaoLoginReq postKakaoLogin) { //BaseREsponse로 반환하기!!
 
         if (postKakaoLogin.getAccessToken() == null || postKakaoLogin.getAccessToken().isEmpty()) { //accesstoken으로 유저정보 요청 , postman 카카오로그인 post로 확인
-            return "FAILED";
+            return new BaseResponse<>(AUTH_KAKAO_EMPTY_TOKEN);
             //return new BaseResponse<>(AUTH_KAKAO_EMPTY_TOKEN);
         }
 
@@ -38,18 +44,13 @@ public class userController {
 
             System.out.println("여기?" + kakaoUserInfo1.getNickName() + "\t 이메일: " + kakaoUserInfo1.getEmail());
 
-
-            // Service에서 할 일 : 1. 있으면 그대로 로그인 (JWT토큰을 클라이언트에게 전달)
-            // 2. 가입x면 강아지 정보 입력을 받아서 디비에 저장
-
-
-            
-            System.out.println(kakaoUserInfo);
+            KakaoAbleUser result = userService.getLogin(kakaoUserInfo1); //service에서 해 와란
+            //result을 프론트에 리턴하기
+            return new BaseResponse<>(result);
 
         } catch (BaseException e) {
             throw new RuntimeException(e);
         }
-        return "SUCCESS";
     }
 
 

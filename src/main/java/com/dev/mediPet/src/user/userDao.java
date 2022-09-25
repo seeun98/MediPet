@@ -31,5 +31,10 @@ public class userDao {
 
     }
 
+    public int checkKakaoId(String email) {
+        String checkIdQuery = "select exists(select email from user where email = ? )";
+        String checkIdParams = email; //?안에 들어갈 것
 
+        return this.jdbcTemplate.queryForObject(checkIdQuery, int.class, checkIdParams);
+    }
 }
