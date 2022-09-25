@@ -16,7 +16,9 @@ public enum BaseResponseStatus {
     
     // [POST] /users
     FAILED_TO_KAKAO_AUTH(false, 3019, "카카오 유저 정보 조회에 실패하였습니다."),
-    FAILED_TO_KAKAO_EMAIL(false, 3020, "카카오 정보에 등록된 이메일이 없습니다. 이메일을 추가 입력해주세요.");
+    FAILED_TO_KAKAO_EMAIL(false, 3020, "카카오 정보에 등록된 이메일이 없습니다. 이메일을 추가 입력해주세요."),
+
+    DATABASE_ERROR(false, 4000, "데이터베이스 에러");
 
     private final boolean isSuccess;
     private final int code;
